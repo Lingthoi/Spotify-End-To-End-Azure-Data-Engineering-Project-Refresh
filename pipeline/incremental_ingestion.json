@@ -235,13 +235,29 @@
 							"inputs": [
 								{
 									"referenceName": "Json_dynamic",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"container": "bronze",
+										"folder": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
+										"file": "empty.json"
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "Json_dynamic",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"container": "bronze",
+										"folder": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
+										"file": "cdc.json"
+									}
 								}
 							]
 						}

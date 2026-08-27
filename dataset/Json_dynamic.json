@@ -35,8 +35,6 @@
 				}
 			}
 		},
-		"schema": {
-			"type": "object"
-		}
+		"schema": {}
 	}
 }
