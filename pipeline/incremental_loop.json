@@ -320,7 +320,7 @@
 				}
 			},
 			{
-				"name": "Web1",
+				"name": "Web",
 				"type": "WebActivity",
 				"dependsOn": [
 					{
